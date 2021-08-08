@@ -26,9 +26,6 @@ class Nuevo extends React.Component{
         fecha:new Date("2000","08","25")
     }
 
-    stato={
-        fecha:new Date("2000","08","25")
-    }
     manejadorChange= e=>{
         this.setState({
             form: {
@@ -134,7 +131,6 @@ class Nuevo extends React.Component{
 
                                 <DatePicker id="fechaNacimiento"      
                                     showYearDropdown
-                                    dateFormatCalendar="MMMM"
                                     yearDropdownItemNumber={50}
                                     scrollableYearDropdown selected={this.state.fecha}
                                     onChange={this.onChange}  className="form-control" 
