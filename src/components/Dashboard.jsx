@@ -55,7 +55,9 @@ class Dashboard extends React.Component{
                         })}
                     </tbody>
                     </table>
+                    <a className="btn btn-success" href="/nuevo" >nuevo</a>
                  </div>
+                
             </React.Fragment>
         );
     }
