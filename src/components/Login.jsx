@@ -58,9 +58,7 @@ class Login extends React.Component{
                 ...this.state.form,
                 [e.target.name]: e.target.value
             }
-        })
-       
-        
+        })    
     }
     
 
@@ -73,14 +71,14 @@ class Login extends React.Component{
                    <br/>
                 
                     <div className="fadeIn first">
-                    <img src={Logo} width="100" height="150" alt="User Icon" />
+                        <img src={Logo} width="100" height="150" alt="User Icon" />
                     </div>
 
                     
                     <form onSubmit={ this.manejadorSubmit}> 
-                    <input type="text" id="login" className="fadeIn second" name="usuario" placeholder="usuario" onChange={ this.manejadorChange }/>
-                    <input type="password" id="password" className="fadeIn third" name="password" placeholder="password" onChange={ this.manejadorChange }/>
-                    <input type="submit" className="fadeIn fourth" value="Log In" onClick={this.manejadorBoton} />
+                        <input type="text" id="login" className="fadeIn second" name="usuario" placeholder="usuario" onChange={ this.manejadorChange }/>
+                        <input type="password" id="password" className="fadeIn third" name="password" placeholder="password" onChange={ this.manejadorChange }/>
+                        <input type="submit" className="fadeIn fourth" value="Log In" onClick={this.manejadorBoton} />
                     </form>
 
                 {this.state.error === true &&
