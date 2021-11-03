@@ -10,7 +10,7 @@ class Header extends React.Component{
         return(
             
             <nav className="navbar navbar-dark bg-primary">
-               <a className="navbar-brand" href="#">React APi</a>
+               <p className="navbar-brand">React APi</p>
             </nav>
         
         );
