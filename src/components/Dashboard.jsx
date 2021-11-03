@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../template/Header';
 import {Apiurl } from '../services/apirest';
 import axios from 'axios';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
    
@@ -55,7 +56,7 @@ class Dashboard extends React.Component{
                         })}
                     </tbody>
                     </table>
-                    <a className="btn btn-success" href="/nuevo" >nuevo</a>
+                    <Link to="/nuevo" className="btn btn-success">Nuevo</Link>
                  </div>
                 
             </React.Fragment>
