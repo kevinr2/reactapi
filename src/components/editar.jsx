@@ -2,6 +2,7 @@ import React from 'react';
 import {Apiurl} from '../services/apirest';
 import axios from 'axios';
 import Header from '../template/Header';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class Editar extends React.Component{
 
@@ -162,7 +163,7 @@ class Editar extends React.Component{
                         <div style={{marginTop:"30px"}}>
                             <button type="submit" className="btn  btn-primary" style={{marginRight: "10px"}} onClick={()=>this.put()}>Editar</button>
                             <button type="submit" className="btn  btn-danger" style={{marginRight: "10px"}} onClick={()=>this.delete()} >Eliminar</button>
-                            <a className="btn  btn-dark" href="/dashboard">Salir</a>
+                            <Link className="btn  btn-dark" to="/dashboard">salir</Link>
                         </div>
                     </form>
                 </div>
