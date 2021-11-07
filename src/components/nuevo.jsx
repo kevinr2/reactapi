@@ -5,6 +5,7 @@ import axios from 'axios';
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class Nuevo extends React.Component{
 
@@ -147,7 +148,7 @@ class Nuevo extends React.Component{
                         </div>
                         <div style={{marginTop:"30px"}}>
                             <button type="submit" className="btn  btn-primary" style={{marginRight: "10px"}} onClick={()=>this.post()} >Crear</button>
-                            <a className="btn  btn-dark" href="/dashboard">Salir</a>
+                            <Link className="btn  btn-dark" to="/dashboard">salir</Link>
                         </div>
                     </form>
                 </div>

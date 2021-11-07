@@ -10,9 +10,7 @@ import axios from 'axios';
 
 class Login extends React.Component{
 
-    constructor(props){
-        super(props);
-    }
+
 
     state={
         form:{
